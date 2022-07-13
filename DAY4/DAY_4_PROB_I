@@ -1,0 +1,135 @@
+/*SETTING A PARTICULAR BIT*/
+
+#include<stdio.h>
+int main()
+{
+    int num,i=7,bit;
+    printf("enter the number:");
+    scanf("%d",&num);
+    printf("the binary format of given number:");
+    AB:if((num>>i)&1)
+        {
+            printf("1");
+        }
+        else
+        {
+            printf("0");
+        }
+        i--;
+        if(i>=0)
+        {
+            goto AB;
+        }
+        printf("\nenter the bit position:");
+        scanf("%d",&bit);
+        num=num|(1<<bit);
+        printf("modified number=%d\n",num);
+        printf("the binary format of given number after setting the particular bit:");
+        i=7;
+    BC:    if((num>>i)&1)
+        {
+            printf("1");
+        }
+        else
+        {
+            printf("0");
+        }
+        i--;
+        if(i>=0)
+        {
+            goto BC;
+        }
+       
+}
+
+/* CLEARING A PARTICULAR BIT*/
+
+#include<stdio.h>
+int main()
+{
+    int num,i,bit;
+    printf("enter the number:");
+    scanf("%d",&num);
+    printf("the binary format of a given number:");
+    i=7;
+    AD:if((num>>i)&1)
+        {
+            printf("1");
+        }
+        else
+        {
+            printf("0");
+        }
+        i--;
+        if(i>=0)
+        {
+            goto AD;
+        }
+        printf("\nenter the bit position:");
+        scanf("%d",&bit);
+        num=num&(~(1<<bit));
+        printf("modified number=%d\n",num);
+        printf("the binary format of given number after clearing the particular bit:");
+        i=7;
+        AA:
+            if((num>>i)&1)
+            {
+                printf("1");
+            }
+            else
+            {
+                printf("0");
+            }
+            i--;
+            if(i>=0)
+            {
+                goto AA;
+            }
+}
+
+/* TOGGLE THE PARTICULAR BIT*/
+
+#include<stdio.h>
+int main()
+{
+    int num,i,bit;
+    printf("enter the number:");
+    scanf("%d",&num);
+    printf("the binary format of given number:");
+    i=7;
+    SS:
+        if((num>>i)&1)
+        {
+            printf("1");
+        }
+        else
+        {
+            printf("0");
+        }
+        i--;
+        if(i>=0)
+        {
+            goto SS;
+        }
+        printf("\n enter the bit position:");
+        scanf("%d",&bit);
+        num=num^(1<<bit);
+        printf("modified number=%d\n",num);
+        printf("the binary format of given number after toggling the particular bit:");
+        i=7;
+        AC:
+            if((num>>i)&1)
+            {
+                printf("1");
+            }
+            else
+            {
+                printf("0");
+            }
+            i--;
+            if(i>=0)
+            {
+                goto AC;
+            }
+}
+
