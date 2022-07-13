@@ -1,0 +1,29 @@
+/*SWAPPING OF TWO VALUES USING THIRD VARIABLE*/
+
+#include<stdio.h>
+int main()
+{
+    int a,b,temp;
+    printf("enter the values of a and b:");
+    scanf("%d %d",&a,&b);
+    printf("the values before swapping:\n");
+    printf("a=%d b=%d\n",a,b);
+    temp=a;
+    a=b;
+    b=temp;
+    printf("the values after swapping:\n");
+    printf("a=%d b=%d\n",a,b);
+    
+    
+    /* SWAPPING OF TWO VALUES WITHOUT USING THIRD VARIABLE*/
+    
+    int a,b;
+    printf("enter the values of a and b:");
+    scanf("%d %d",&a,&b);
+    printf("the values before swapping:\n");
+    printf("a=%d b=%d\n",a,b);
+    a^=b^=a^=b;
+    printf("the values after swapping:\n");
+    printf("a=%d b=%d\n",a,b);
+    
+}
