@@ -1,0 +1,35 @@
+/* BIGGEST NUMBER USING CONDITIONAL OPEATOR*/
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the values of a and b:");
+    scanf("%d %d",&a,&b);
+    a>b?printf("a is the biggest number\n"):printf("b is the biggest number\n");
+}
+
+/*EVEN AND ODD USING CONDITIONAL OPEATOR*/
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the values of a and b:");
+    scanf("%d %d",&a,&b);
+    a%2==0?printf("a is even\n"):printf("a is odd\n");
+    b%2==0?printf("b is even\n"):printf("b is odd\n");
+}
+
+/* POSITIVE OR NEGATIVE NUMBER USING CONDITIONAL OPERTOR*/
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter any number:");
+    scanf("%d",&num);
+    num>0?printf("%d is positive number\n",num):printf("%d is negative number\n",num);
+}
+
