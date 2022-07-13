@@ -1,0 +1,11 @@
+collect 15 elements (8 integers, 7 float) as i/p from user. 
+
+Calculate and Print the sum, average and mean of integers
+
+Calculate and Print the sum, average of all float values
+
+Divide sum in statement ‘b’ with statement ‘c’ sum and print the value.
+
+Divide average in statement ‘b’ with statement ‘c’ average and print the value.
+
+Convert all 7 float values to integers and print them.
